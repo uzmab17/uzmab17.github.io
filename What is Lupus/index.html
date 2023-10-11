@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>What is Lupus</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+
+</head>
+
+<body>
+  <img src="images/TopNav.jpg" style="width: 100%; height: auto;">
+
+<header>
+	<h1>Lupus</h1>
+    <p>Medically Reviewed by Stephanie S. Gardner, MD on April 26, 2022 | Written by WebMD Editorial Contributors</p>
+
+  </header>
+    
+<div class="container">
+        <div class="box" onclick="showPopup('What is Lupus', '<img src=\'images/Lupus.jpg\' alt=\'Lupus \'>')">
+            What is Lupus
+        </div>
+    </div>
+<div class="container">
+    <div class="box" onclick="showPopup('Symptoms', '<img src=\'images/symptoms1.jpg\' alt=\'Symptoms 1\'><img src=\'images/symptoms2.jpg\' alt=\'Symptoms 2\'>')">
+        Symptoms
+    </div>
+    <div class="box" onclick="showPopup('Lupus Complications', '<img src=\'images/Complications.jpg\' alt=\'Complications\'><img src=\'images/Complications2.jpg\' alt=\'Complications 2\'>')">
+        Lupus Complications
+    </div>
+    <div class="box" onclick="showPopup('Lupus Causes', '<img src=\'images/Causes.jpg\' alt=\'Causes\'><img src=\'images/Causes2.jpg\' alt=\'Causes 2\'>')"> Lupus Cauuses    
+     </div>
+
+    <div class="box" onclick="showPopup('Types of Lupus', '<img src=\'images/Type.jpg\' alt=\'Type\'>')">
+        Types of Lupus
+    </div>
+
+    <div class="box" onclick="showPopup('Lupus Diagnosis', '<img src=\'images/Diagnosis.jpg\' alt=\'Diagnosis\'><img src=\'images/Diagnosis2.jpg\' alt=\'Diagnosis 2\'>')"> Lupus Diagnosis    
+     </div>
+
+     <div class="box" onclick="showPopup('Lupus Treatment', '<img src=\'images/Treatment.jpg\' alt=\'Treatment\'><img src=\'images/Treatment2.jpg\' alt=\'Treatment 2\'><img src=\'images/Treatment3.jpg\' alt=\'Treatment 3\'>')"> Lupus Treatment    
+     </div>
+
+    <div class="box" onclick="showPopup('Lifestyle Changes', '<img src=\'images/Changes.jpg\' alt=\'Changes\'>')"> Lifestyle Changes    
+     </div>
+
+      <div class="box" onclick="showPopup('Lupus Outlook', '<img src=\'images/Outlook.jpg\' alt=\'Outlook\'>')"> Lupus Outlook
+     </div>
+	<div class="box" onclick="showPopup('Living With Someone Who Has Lupus', '<img src=\'images/Living.jpg\' alt=\'Living\'>')"> Living With Someone Who Has Lupus
+     </div>
+
+
+ <!-- Popup -->
+    <div id="popup" class="popup" onclick="hidePopup()">
+        <div class="popup-content">
+            <span class="close-btn">&#10006;</span>
+            <div id="popup-content-content"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showPopup(title, content) {
+        document.getElementById('popup-content-content').innerHTML = `<h2>${title}</h2>${content}`;
+        document.getElementById('popup').style.display = 'block';
+    }
+
+    function hidePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+</script>
+
+
+<div class="image-container">
+    	<img src="Images/More.jpg">
+	</div>
+
+<div class="image-container">
+        <img src="Images/Link.jpg">
+    </div>
+
+<div class="image-container">
+        <img src="Images/Footnote.jpg">
+    </div>
+
+
+
+
+
+</body>
+</html>
